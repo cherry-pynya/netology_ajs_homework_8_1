@@ -1,6 +1,3 @@
-// eslint-disable-next-line import/extensions
-import { Bowerman } from './Character.js';
-
 class Team {
   constructor() {
     this.members = new Set();
@@ -32,12 +29,3 @@ class Team {
   }
 }
 export default Team;
-
-const grisha = new Bowerman('grisha');
-const dima = new Bowerman('dima');
-const ivan = new Bowerman('ivan');
-const team = new Team();
-console.log(team)
-team.add(grisha);
-console.log(team)
-console.log(team.toArray());
